@@ -1,268 +1,322 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Professional Resume</title>
-        <link rel="stylesheet" href="styles.css?v=2" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-            rel="stylesheet"
-        />
-        <style>
-            /* Force header colors */
-            .header {
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-                color: white !important;
-            }
-            .skill-tag {
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-                color: white !important;
-            }
-            .company-name {
-                color: #667eea !important;
-            }
-            .section-title::after {
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="resume-container">
-            <!-- Header Section -->
-            <header class="header">
-                <div class="header-content">
-                    <div class="profile-section">
-                        <div class="profile-image profile-placeholder">
-                            <span class="profile-initials">TM</span>
-                        </div>
-                        <div class="profile-info">
-                            <h1 class="full-name">Tevin Munene</h1>
-                            <h2 class="job-title">Product Designer</h2>
-                        </div>
-                    </div>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope" aria-hidden="true"></i>
-                            <span>tevin.munene@email.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone" aria-hidden="true"></i>
-                            <span>+254 700 000 000</span>
-                        </div>
-                        <div class="contact-item">
-                            <i
-                                class="fas fa-map-marker-alt"
-                                aria-hidden="true"
-                            ></i>
-                            <span>Nairobi, Kenya</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            <a
-                                href="https://linkedin.com/in/tevinmunene"
-                                target="_blank"
-                                rel="noopener"
-                                >linkedin.com/in/tevinmunene</a
-                            >
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-behance" aria-hidden="true"></i>
-                            <a
-                                href="https://behance.net/tevinmunene"
-                                target="_blank"
-                                rel="noopener"
-                                >behance.net/tevinmunene</a
-                            >
-                        </div>
-                    </div>
-                </div>
-            </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tevin Munene - Product Designer</title>
 
-            <!-- Main Content -->
-            <main class="main-content">
-                <!-- Professional Summary -->
-                <section class="section summary-section">
-                    <h3 class="section-title">Professional Summary</h3>
-                    <p class="summary-text">
-                        Creative and detail-oriented Product Designer with 1
-                        year of experience in user-centered design. Skilled in
-                        conducting user research, creating wireframes,
-                        prototyping, and delivering intuitive digital
-                        experiences. Passionate about solving complex problems
-                        through design thinking and creating products that make
-                        a meaningful impact on users' lives.
-                    </p>
-                </section>
+    <!-- Fonts + Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 
-                <!-- Experience Section -->
-                <section class="section experience-section">
-                    <h3 class="section-title">Professional Experience</h3>
+    <style>
+      /* Base Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-                    <div class="job">
-                        <div class="job-header">
-                            <div class="job-info">
-                                <h4 class="job-title">
-                                    Product Design Student
-                                </h4>
-                                <div class="company-name">Moringa School</div>
-                            </div>
-                            <div class="job-duration">2023 - 2024 (1 Year)</div>
-                        </div>
-                        <ul class="job-responsibilities">
-                            <li>
-                                Completed comprehensive product design bootcamp
-                                covering user experience and user interface
-                                design
-                            </li>
-                            <li>
-                                Conducted user research through interviews,
-                                surveys, and usability testing sessions
-                            </li>
-                            <li>
-                                Created wireframes, prototypes, and
-                                high-fidelity designs using Figma and Adobe
-                                Creative Suite
-                            </li>
-                            <li>
-                                Collaborated on team projects applying design
-                                thinking methodology to solve real-world
-                                problems
-                            </li>
-                            <li>
-                                Delivered final capstone project demonstrating
-                                end-to-end product design process
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+      body {
+        font-family: 'Inter', sans-serif;
+        background: #f8fafc;
+        color: #2d3748;
+        line-height: 1.6;
+      }
 
-                <!-- Education Section -->
-                <section class="section education-section">
-                    <h3 class="section-title">Education</h3>
+      /* Resume Container */
+      .resume-container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      }
 
-                    <div class="education-item">
-                        <div class="education-header">
-                            <div class="education-info">
-                                <h4 class="degree">
-                                    Product Design Certificate
-                                </h4>
-                                <div class="institution">Moringa School</div>
-                            </div>
-                            <div class="education-duration">2023 - 2024</div>
-                        </div>
-                        <div class="education-details">
-                            <span class="honors">Successfully Completed</span>
-                        </div>
-                    </div>
-                </section>
+      /* Header */
+      .header {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: #fff;
+        text-align: center;
+        padding: 40px 20px;
+      }
 
-                <!-- Skills Section -->
-                <section class="section skills-section">
-                    <h3 class="section-title">Design Skills</h3>
+      .profile-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
 
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h4 class="skill-category-title">Design Tools</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Figma</span>
-                                <span class="skill-tag">Adobe XD</span>
-                                <span class="skill-tag">Sketch</span>
-                                <span class="skill-tag">Photoshop</span>
-                                <span class="skill-tag">Illustrator</span>
-                            </div>
-                        </div>
+      .profile-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: 600;
+      }
 
-                        <div class="skill-category">
-                            <h4 class="skill-category-title">Design Process</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">User Research</span>
-                                <span class="skill-tag">Wireframing</span>
-                                <span class="skill-tag">Prototyping</span>
-                                <span class="skill-tag">User Testing</span>
-                                <span class="skill-tag">Design Systems</span>
-                            </div>
-                        </div>
+      .full-name {
+        font-size: 2rem;
+        font-weight: 700;
+      }
 
-                        <div class="skill-category">
-                            <h4 class="skill-category-title">
-                                Frontend Knowledge
-                            </h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">HTML</span>
-                                <span class="skill-tag">CSS</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">Responsive Design</span>
-                                <span class="skill-tag">Web Accessibility</span>
-                            </div>
-                        </div>
+      .job-title {
+        font-size: 1.1rem;
+        opacity: 0.9;
+      }
 
-                        <div class="skill-category">
-                            <h4 class="skill-category-title">Methodology</h4>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Design Thinking</span>
-                                <span class="skill-tag">Agile/Scrum</span>
-                                <span class="skill-tag"
-                                    >User-Centered Design</span
-                                >
-                                <span class="skill-tag"
-                                    >Information Architecture</span
-                                >
-                                <span class="skill-tag">Usability Testing</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+      .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+      }
 
-                <!-- Projects Section -->
-                <section class="section projects-section">
-                    <h3 class="section-title">Key Projects</h3>
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.95rem;
+        opacity: 0.95;
+      }
 
-                    <div class="certification-list">
-                        <div class="certification-item">
-                            <h4 class="certification-name">
-                                Mobile Banking App Redesign
-                            </h4>
-                            <div class="certification-details">
-                                <span class="certification-issuer"
-                                    >UX/UI Design Project</span
-                                >
-                                <span class="certification-date">2024</span>
-                            </div>
-                            <p class="project-description">
-                                Redesigned a mobile banking interface focusing
-                                on improving user experience for account
-                                management and transactions. Conducted user
-                                interviews and usability testing to validate
-                                design decisions.
-                            </p>
-                        </div>
+      .contact-item i {
+        font-size: 14px;
+      }
 
-                        <div class="certification-item">
-                            <h4 class="certification-name">
-                                E-commerce Website Design
-                            </h4>
-                            <div class="certification-details">
-                                <span class="certification-issuer"
-                                    >Capstone Project</span
-                                >
-                                <span class="certification-date">2024</span>
-                            </div>
-                            <p class="project-description">
-                                Created end-to-end design for an online
-                                marketplace, including user research,
-                                wireframes, prototypes, and high-fidelity
-                                mockups. Applied design system principles for
-                                consistent user experience.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-            </main>
+      .contact-item a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /* Main Content */
+      .main-content {
+        padding: 30px;
+        display: grid;
+        gap: 40px;
+      }
+
+      .section-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #2d3748;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 5px;
+      }
+
+      .summary-text {
+        color: #4a5568;
+        text-align: justify;
+      }
+
+      /* Job */
+      .job {
+        border-bottom: 1px solid #e2e8f0;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+      }
+
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+
+      .job-title {
+        font-weight: 600;
+        color: #2d3748;
+      }
+
+      .company-name {
+        color: #667eea;
+      }
+
+      .job-duration {
+        font-size: 0.9rem;
+        color: #718096;
+      }
+
+      .job-responsibilities {
+        margin-top: 10px;
+        list-style: none;
+      }
+
+      .job-responsibilities li::before {
+        content: "▸ ";
+        color: #667eea;
+        font-weight: bold;
+      }
+
+      /* Education */
+      .education-item {
+        margin-bottom: 15px;
+      }
+
+      .degree {
+        font-weight: 600;
+      }
+
+      .institution {
+        color: #667eea;
+      }
+
+      /* Skills */
+      .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .skill-tag {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: #fff;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+      }
+
+      /* Projects */
+      .project {
+        background: #f7fafc;
+        border-left: 4px solid #667eea;
+        padding: 15px;
+        border-radius: 6px;
+      }
+
+      .project h4 {
+        font-weight: 600;
+        color: #2d3748;
+      }
+
+      .project p {
+        color: #4a5568;
+        font-size: 0.9rem;
+        margin-top: 5px;
+      }
+
+      /* --- Responsive --- */
+      @media (max-width: 768px) {
+        .full-name {
+          font-size: 1.8rem;
+        }
+
+        .job-header {
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .header {
+          padding: 30px 15px;
+        }
+
+        .main-content {
+          padding: 20px;
+        }
+
+        .contact-info {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .profile-image {
+          width: 100px;
+          height: 100px;
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="resume-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="profile-section">
+          <div class="profile-image">TM</div>
+          <h1 class="full-name">Tevin Munene</h1>
+          <h2 class="job-title">Product Designer</h2>
         </div>
-    </body>
+        <div class="contact-info">
+          <div class="contact-item"><i class="fas fa-envelope"></i> tevin.munene@email.com</div>
+          <div class="contact-item"><i class="fas fa-phone"></i> +254 700 000 000</div>
+          <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</div>
+          <div class="contact-item"><i class="fab fa-linkedin"></i> <a href="#">linkedin.com/in/tevinmunene</a></div>
+          <div class="contact-item"><i class="fab fa-behance"></i> <a href="#">behance.net/tevinmunene</a></div>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <main class="main-content">
+        <section>
+          <h3 class="section-title">Professional Summary</h3>
+          <p class="summary-text">
+            Creative and detail-oriented Product Designer with experience in user-centered design. Skilled in research, wireframing, prototyping, and creating intuitive interfaces that improve user experience and business outcomes.
+          </p>
+        </section>
+
+        <section>
+          <h3 class="section-title">Experience</h3>
+          <div class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">Product Design Student</div>
+                <div class="company-name">Moringa School</div>
+              </div>
+              <div class="job-duration">2023 - 2024</div>
+            </div>
+            <ul class="job-responsibilities">
+              <li>Completed comprehensive product design bootcamp covering UX and UI design.</li>
+              <li>Conducted user research, interviews, and usability testing.</li>
+              <li>Created wireframes, prototypes, and high-fidelity designs in Figma.</li>
+              <li>Collaborated in team projects using design thinking to solve problems.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h3 class="section-title">Education</h3>
+          <div class="education-item">
+            <div class="degree">Product Design Certificate</div>
+            <div class="institution">Moringa School (2023 - 2024)</div>
+          </div>
+        </section>
+
+        <section>
+          <h3 class="section-title">Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Adobe XD</span>
+            <span class="skill-tag">User Research</span>
+            <span class="skill-tag">Wireframing</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </section>
+
+        <section>
+          <h3 class="section-title">Key Projects</h3>
+          <div class="project">
+            <h4>Mobile Banking App Redesign</h4>
+            <p>Redesigned a banking interface to improve transaction flow and accessibility. Used user interviews to validate UX improvements.</p>
+          </div>
+          <div class="project">
+            <h4>E-commerce Website Design</h4>
+            <p>Designed an online store from research to final UI mockups. Created a consistent design system for brand scalability.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
