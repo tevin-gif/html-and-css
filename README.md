@@ -10,21 +10,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 
     <style>
-      /* Base Reset */
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
-
       body {
         font-family: 'Inter', sans-serif;
         background: #f8fafc;
         color: #2d3748;
         line-height: 1.6;
       }
-
-      /* Resume Container */
       .resume-container {
         max-width: 900px;
         margin: 40px auto;
@@ -33,22 +29,18 @@
         overflow: hidden;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
       }
-
-      /* Header */
       .header {
         background: linear-gradient(135deg, #667eea, #764ba2);
         color: #fff;
         text-align: center;
         padding: 40px 20px;
       }
-
       .profile-section {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
       }
-
       .profile-image {
         width: 120px;
         height: 120px;
@@ -60,17 +52,14 @@
         font-size: 40px;
         font-weight: 600;
       }
-
       .full-name {
         font-size: 2rem;
         font-weight: 700;
       }
-
       .job-title {
         font-size: 1.1rem;
         opacity: 0.9;
       }
-
       .contact-info {
         display: flex;
         flex-wrap: wrap;
@@ -78,7 +67,6 @@
         gap: 15px;
         margin-top: 15px;
       }
-
       .contact-item {
         display: flex;
         align-items: center;
@@ -86,23 +74,18 @@
         font-size: 0.95rem;
         opacity: 0.95;
       }
-
       .contact-item i {
         font-size: 14px;
       }
-
       .contact-item a {
         color: #fff;
         text-decoration: none;
       }
-
-      /* Main Content */
       .main-content {
         padding: 30px;
         display: grid;
         gap: 40px;
       }
-
       .section-title {
         font-size: 1.4rem;
         font-weight: 600;
@@ -111,71 +94,55 @@
         border-bottom: 2px solid #e2e8f0;
         padding-bottom: 5px;
       }
-
       .summary-text {
         color: #4a5568;
         text-align: justify;
       }
-
-      /* Job */
       .job {
         border-bottom: 1px solid #e2e8f0;
         padding-bottom: 15px;
         margin-bottom: 20px;
       }
-
       .job-header {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 5px;
       }
-
       .job-title {
         font-weight: 600;
         color: #2d3748;
       }
-
       .company-name {
         color: #667eea;
       }
-
       .job-duration {
         font-size: 0.9rem;
         color: #718096;
       }
-
       .job-responsibilities {
         margin-top: 10px;
         list-style: none;
       }
-
       .job-responsibilities li::before {
         content: "▸ ";
         color: #667eea;
         font-weight: bold;
       }
-
-      /* Education */
       .education-item {
         margin-bottom: 15px;
       }
-
       .degree {
         font-weight: 600;
       }
-
       .institution {
         color: #667eea;
       }
-
-      /* Skills */
       .skill-tags {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
       }
-
       .skill-tag {
         background: linear-gradient(135deg, #667eea, #764ba2);
         color: #fff;
@@ -183,63 +150,47 @@
         border-radius: 20px;
         font-size: 0.85rem;
       }
-
-      /* Projects */
       .project {
         background: #f7fafc;
         border-left: 4px solid #667eea;
         padding: 15px;
         border-radius: 6px;
+        margin-bottom: 15px;
       }
-
       .project h4 {
         font-weight: 600;
         color: #2d3748;
       }
-
       .project p {
         color: #4a5568;
         font-size: 0.9rem;
         margin-top: 5px;
       }
-
-      /* --- Responsive --- */
-      @media (max-width: 768px) {
-        .full-name {
-          font-size: 1.8rem;
-        }
-
-        .job-header {
-          flex-direction: column;
-        }
+      .project a {
+        display: inline-block;
+        margin-top: 8px;
+        font-size: 0.85rem;
+        color: #667eea;
+        text-decoration: none;
       }
-
+      .project a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 768px) {
+        .full-name { font-size: 1.8rem; }
+        .job-header { flex-direction: column; }
+      }
       @media (max-width: 480px) {
-        .header {
-          padding: 30px 15px;
-        }
-
-        .main-content {
-          padding: 20px;
-        }
-
-        .contact-info {
-          flex-direction: column;
-          gap: 10px;
-        }
-
-        .profile-image {
-          width: 100px;
-          height: 100px;
-          font-size: 32px;
-        }
+        .header { padding: 30px 15px; }
+        .main-content { padding: 20px; }
+        .contact-info { flex-direction: column; gap: 10px; }
+        .profile-image { width: 100px; height: 100px; font-size: 32px; }
       }
     </style>
   </head>
 
   <body>
     <div class="resume-container">
-      <!-- Header -->
       <header class="header">
         <div class="profile-section">
           <div class="profile-image">TM</div>
@@ -255,7 +206,6 @@
         </div>
       </header>
 
-      <!-- Main -->
       <main class="main-content">
         <section>
           <h3 class="section-title">Professional Summary</h3>
@@ -308,12 +258,14 @@
         <section>
           <h3 class="section-title">Key Projects</h3>
           <div class="project">
-            <h4>Mobile Banking App Redesign</h4>
-            <p>Redesigned a banking interface to improve transaction flow and accessibility. Used user interviews to validate UX improvements.</p>
+            <h4>Wedding Planner App</h4>
+            <p>Designed a wedding planner application to simplify event coordination and vendor communication, focusing on intuitive UX and elegant UI flow.</p>
+            <a href="https://www.figma.com/board/Y7us5C4zoG0oSNJMjnJHZc/wedding-planner-app?node-id=0-1&t=VHjcFh4XN0ohNV8q-1" target="_blank">View Project ↗</a>
           </div>
           <div class="project">
-            <h4>E-commerce Website Design</h4>
-            <p>Designed an online store from research to final UI mockups. Created a consistent design system for brand scalability.</p>
+            <h4>Grocery List App</h4>
+            <p>Created a mobile grocery list app prototype with task management and reminders to improve user convenience and productivity.</p>
+            <a href="https://www.figma.com/proto/k5K6dl6NaI16y7m8GCr45m/Grocery-List-App?node-id=19-1829&starting-point-node-id=7%3A2&t=JSbvoHfA1ZeARcRT-1" target="_blank">View Project ↗</a>
           </div>
         </section>
       </main>
