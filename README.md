@@ -206,70 +206,53 @@
         </div>
       </header>
 
-      <main class="main-content">
-        <section>
-          <h3 class="section-title">Professional Summary</h3>
-          <p class="summary-text">
-            Creative and detail-oriented Product Designer with experience in user-centered design. Skilled in research, wireframing, prototyping, and creating intuitive interfaces that improve user experience and business outcomes.
-          </p>
-        </section>
+    <main class="main-content">
+  <section>
+    <h3 class="section-title">Professional Summary</h3>
+    <p class="summary-text">
+      Creative and detail-oriented Product Designer with experience in user-centered design. Skilled in research, wireframing, prototyping, and creating intuitive interfaces that improve user experience and business outcomes.
+    </p>
+  </section>
 
-        <section>
-          <h3 class="section-title">Experience</h3>
-          <div class="job">
-            <div class="job-header">
-              <div>
-                <div class="job-title">Product Design Student</div>
-                <div class="company-name">Moringa School</div>
-              </div>
-              <div class="job-duration">2023 - 2024</div>
-            </div>
-            <ul class="job-responsibilities">
-              <li>Completed comprehensive product design bootcamp covering UX and UI design.</li>
-              <li>Conducted user research, interviews, and usability testing.</li>
-              <li>Created wireframes, prototypes, and high-fidelity designs in Figma.</li>
-              <li>Collaborated in team projects using design thinking to solve problems.</li>
-            </ul>
-          </div>
-        </section>
-
-        <section>
-          <h3 class="section-title">Education</h3>
-          <div class="education-item">
-            <div class="degree">Product Design Certificate</div>
-            <div class="institution">Moringa School (2023 - 2024)</div>
-          </div>
-        </section>
-
-        <section>
-          <h3 class="section-title">Skills</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Figma</span>
-            <span class="skill-tag">Adobe XD</span>
-            <span class="skill-tag">User Research</span>
-            <span class="skill-tag">Wireframing</span>
-            <span class="skill-tag">Prototyping</span>
-            <span class="skill-tag">HTML</span>
-            <span class="skill-tag">CSS</span>
-            <span class="skill-tag">JavaScript</span>
-          </div>
-        </section>
-
-        <section>
-          <h3 class="section-title">Key Projects</h3>
-          <div class="project">
-            <h4>Wedding Planner App</h4>
-            <p>Designed a wedding planner application to simplify event coordination and vendor communication, focusing on intuitive UX and elegant UI flow.</p>
-            <a href="https://www.figma.com/board/Y7us5C4zoG0oSNJMjnJHZc/wedding-planner-app?node-id=0-1&t=VHjcFh4XN0ohNV8q-1" target="_blank">View Project ↗</a>
-          </div>
-          <div class="project">
-            <h4>Grocery List App</h4>
-            <p>Created a mobile grocery list app prototype with task management and reminders to improve user convenience and productivity.</p>
-            <a href="https://www.figma.com/proto/k5K6dl6NaI16y7m8GCr45m/Grocery-List-App?node-id=19-1829&starting-point-node-id=7%3A2&t=JSbvoHfA1ZeARcRT-1" target="_blank">View Project ↗</a>
-          </div>
-        </section>
-      </main>
+  <section>
+    <h3 class="section-title">Experience</h3>
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <div class="job-title">Product Design Student</div>
+          <div class="company-name">Moringa School</div>
+        </div>
+        <div class="job-duration">2023 - 2024</div>
+      </div>
+      <ul class="job-responsibilities">
+        <li>Completed comprehensive product design bootcamp covering UX and UI design.</li>
+        <li>Conducted user research, interviews, and usability testing.</li>
+        <li>Created wireframes, prototypes, and high-fidelity designs in Figma.</li>
+        <li>Collaborated in team projects using design thinking to solve problems.</li>
+      </ul>
     </div>
-  </body>
-</html>
+  </section>
 
+  <section>
+    <h3 class="section-title">Education</h3>
+    <div class="education-item">
+      <div class="degree">Product Design Certificate</div>
+      <div class="institution">Moringa School (2023 - 2024)</div>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="section-title">Skills</h3>
+    <div class="skill-tags">
+      <span class="skill-tag">Figma</span>
+      <span class="skill-tag">Adobe XD</span>
+      <span class="skill-tag">User Research</span>
+      <span class="skill-tag">Wireframing</span>
+      <span class="skill-tag">Prototyping</span>
+      <span class="skill-tag">HTML</span>
+      <span class="skill-tag">CSS</span>
+      <span class="skill-tag">JavaScript</span>
+    </div>
+  </section>
+</main>
+</div>
